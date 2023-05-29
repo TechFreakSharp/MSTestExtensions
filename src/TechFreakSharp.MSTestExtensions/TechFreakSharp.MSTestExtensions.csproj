@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+    <PackageVersion>0.1.0.0-alpha1</PackageVersion>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+    <Title>TechFreakSharp.MSTestExtensions</Title>
+    <Authors>Michel Zehnder / GitHub Collaborators</Authors>
+    <Description>Extensions for MSTest</Description>
+    <Copyright>GitHub Collaborators</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/TechFreakSharp/MSTestExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TechFreakSharp/MSTestExtensions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>MSTest, Extensions</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="LICENSE" Pack="true" PackagePath="\"/>
+    <None Include="icon.png" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSTest.TestFramework" Version="3.0.3" />
+  </ItemGroup>
+
+</Project>
